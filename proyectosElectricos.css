@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    /*background: rgba(0,0,0, .2);*/
+}
+
+.contenedor{
+    margin: auto;
+    /*margin: 20px;*/
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header{
+    width: 100%;
+    padding: 50px 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .menu a{
+    color: #5E5E4A;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.header .menu a:hover{
+    text-decoration: underline;
+}
+
+.background{
+    width: 100%;
+    background-image: url(img/imagen1400X600.jpg);
+    background-size: cover;
+    padding: 20px;
+    height: 500px;
+    margin-top: -25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.background .titulo{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+}
+
+.background .titulo-a{
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+section .titulo-b{
+    background: #07B6F0;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+section .titulo-c{
+    margin-top: 50px;
+    text-align: center;
+    color: #07B6F0;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+section .titulo-d{
+    text-align: center;
+    color: #2C3E50;
+    margin-bottom: 100px;
+    font-size: 32px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: normal;
+    line-height: 37px;
+}
+
+section .resumen-cd{
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0,0,0, .5);
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: -40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+section .titulo-e{
+    text-align: center;
+    color: #07B6F0;
+    font-weight: normal;
+    font-size: 32px;
+    margin-bottom: 80px;
+    border: 1px solid #2C3E50;
+    padding: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+section .resumen-e{
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 27px;
+    color: rgba(7,182,240, .5);
+    text-align: center;
+    margin-bottom: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.banner{
+    margin: 0 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+} 
+.columna {
+    /*background: #07B6F0;*/
+    color: rgba(0,0,0, .5);
+    padding: 15px;
+    margin: 15px;
+    margin-bottom: 80px;
+    width: 100%;
+    text-align: center;
+}
+
+.banner .titulo-columna{
+    color: #07B6F0;
+    font-size: 32px;
+}
+
+.banner .titulo-columna, .txt-columna{
+    margin-top: 20px;
+    line-height: 27px;
+}
+
+.mapa{
+    width: 100%;
+    background: #07B6F0;
+    /*margin-top: 20px;*/
+    /*margin-bottom: 20px;*/
+    text-align: center;
+    /*margin: 20px 20px 0 0;*/
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+iframe{
+    margin-top: 20px;
+    padding: 0 40px;
+}
+
+.mapa p{
+    margin-top: 20px;
+    padding: 0 40px;
+    line-height: 35px;
+    text-align: left;
+    color: rgba(0,0,0, .5);
+}
+
+.redes-sociales{
+    background: #2C3E50;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.redes-sociales .autor{
+    color: #fff;
+    font-size: 18px;
+}
+
+.redes-sociales a{
+    color: #fff;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.redes-sociales a:hover{
+    text-decoration: none;
+}
+
+/*---------------------------------------------------------*/
+/* Responsive Design */
+
+@media screen and (max-width: 1000px){
+    .header{
+        /*width: 100%;
+        padding: 50px 0;
+        margin-left: 40px;
+        margin-right: 40px;
+        display: flex;
+        justify-content: space-around;*/
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header .menu{
+        margin-top: 20px;
+    }
+    
+    .banner{
+        /*width: 90%;*/
+        /*flex-direction: column;
+        align-items: center;
+        margin-top: -20px;*/
+    }
+    
+    .banner .columna{
+        margin-bottom: 10px;
+    }
+    
+    .banner img{
+        width: 100%;
+    }
+    
+    .banner .titulo-columna{
+        width: 100%;
+        margin: 20px 0;
+        padding: 0;
+        text-align: center;
+        font-size: 32px;
+    }
+    
+    .banner .txt-columna{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .mapa{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    
+    .header .menu a{
+        font-size: 12px;
+    }
+    
+    .banner{
+        flex-direction: column;
+        align-items: center;
+        margin-top: -20px;
+    }
+    
+    .banner .titulo-columna{
+        font-size: 28px;
+        margin-bottom: 10px;
+    } 
+    
+    .banner .txt-columna{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .mapa{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /*.mapa iframe{
+        width: 300px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }*/
+    
+    .mapa .contacto{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    
+    .header .menu a{
+        font-size: 9px;
+    }
+    
+    .banner{
+        /*display: none;*/
+    }
+    
+    .mapa iframe{
+        width: 400px;
+        margin: 20px 0 0 0;
+    }
+    
+    .mapa p{
+        font-size: 12px;
+        padding: 0;
+        line-height: 27px;
+        margin: 20px 30px 0 0;
+    }
+    
+    .redes-sociales{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
